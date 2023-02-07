@@ -1,0 +1,18 @@
+﻿<Window x:Class="Final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="Final" Height="250" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontWeight="Bold" Text="Hexadecimal Input (64 bits / 16 characters, no spaces):" Height="16" FontFamily="Tw Cen MT" FontSize="14"/>
+        <TextBox x:Name="inHex" HorizontalAlignment="Center" Height="17" Margin="10,26,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" FontFamily="Consolas" TextChanged="inHex_TextChanged"/>
+        <Button x:Name="calculate" Content="CALCULATE" HorizontalAlignment="Left" Margin="10,48,10,0" VerticalAlignment="Top" Width="372" Height="49" FontFamily="Tw Cen MT" FontWeight="Bold" FontStyle="Italic" FontSize="36" Click="calculate_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,102,-8,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontWeight="Bold" Text="Hexadecimal Output (64 bits):" Height="16" FontFamily="Tw Cen MT" FontSize="14"/>
+        <TextBox x:Name="outHex" HorizontalAlignment="Left" Height="17" Margin="10,123,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" FontFamily="Consolas"/>
+        <TextBlock x:Name="outErrors" HorizontalAlignment="Left" Margin="10,164,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tw Cen MT" FontSize="14" Foreground="Red" Height="45" Width="372"/>
+
+    </Grid>
+</Window>
